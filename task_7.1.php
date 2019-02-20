@@ -25,13 +25,12 @@ class Stack
 }
 $stackOut = new Stack();
 $stackIn = new Stack();
-for($i = 0; $i<= 10; $i++) {
+for($i = 0; $i < 10; $i++) {
     $stackIn->in($i . 'abc');
 }
-for($i = 0; $i< 10; $i++) {
+for($i = 0; $i < 10; $i++) {
 	$stackOut->in($stackIn->out());
 }
+print_r($stackIn);
+echo PHP_EOL;
 print_r($stackOut);
-echo $stackOut->out();
-echo $stackOut->out();
-echo $stackOut->out();
